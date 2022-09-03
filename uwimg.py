@@ -49,6 +49,9 @@ shift_image.argtypes = [IMAGE, c_int, c_float]
 clamp_image = lib.clamp_image
 clamp_image.argtypes = [IMAGE]
 
+scale_image = lib.scale_image
+scale_image.argtypes = [IMAGE, c_int, c_float]
+
 load_image_lib = lib.load_image
 load_image_lib.argtypes = [c_char_p]
 load_image_lib.restype = IMAGE
